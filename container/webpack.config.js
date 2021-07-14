@@ -13,6 +13,7 @@ module.exports = {
         // Allows to import like => import "products/ProductsIndex";
         // productName@http://....
         products: "products@http://localhost:8081/remoteEntry.js",
+        cart: "cart@http://localhost:8082/remoteEntry.js",
       },
     }),
     new HtmlWebpackPlugin({
