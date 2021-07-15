@@ -17,6 +17,7 @@ module.exports = {
       exposes: {
         "./ProductsIndex": "./src/index",
       },
+      shared: ["faker"],
     }),
     // Will inject bundled file from dist to the following location
     new HtmlWebpackPlugin({
