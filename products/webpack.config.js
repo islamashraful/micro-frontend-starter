@@ -15,8 +15,9 @@ module.exports = {
       // Expose src/index
       // Other app can use this module like => import "products/ProductsIndex";
       exposes: {
-        "./ProductsIndex": "./src/index",
+        "./ProductsIndex": "./src/bootstrap",
       },
+      // Will be shared only if major version of `faker` matched
       shared: ["faker"],
     }),
     // Will inject bundled file from dist to the following location
